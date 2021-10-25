@@ -1,1 +1,40 @@
+# Proof of Work
+## Concept
+ POW is a process to show that your computer spend energy.
+ More you have computing power, more your reward is high.
+
+
+## block
+ Bitcoin difficulty changes every 2016 blocks.
+ New_d = Old_d x (time last 2016 / (2016 x mean_time_for_1_block))
+
+
+## block mining follow an exponential function
+ Each hash is 256 bits => 32 Bytes in Hex (0 => F)
+ So to have an Hash with 0.............., we need to hash 16 times in mean.
+ then the nonce follow this :
+- Difficulty 0 => 16^0 => 1
+- Difficulty 1 => 16^1 => 16
+- Difficulty 2 => 16^2 => 256
+- Difficulty 3 => 16^3 => 4096 ...
+- Difficulty 16 => 16^16 => 18 446 744 073 709 551 616
+- Difficulty 32 => 32^16 => 3,403e+38 (get collision)
+
+* In Theory => So we can conclude the block mining for this function f(d) = 16^d, where d is the difficulty (number of zeros)
+* In Reality => it is f(d) = 16^(d-1)*(16/2) because in the last case, we have 50% chance
+
+
+## Time of found a specific block follow an exponential law
+ Hash many time for a specific difficulty didn't give the same nonce or the same time of hash.
+ It follows a continuous variable probability => P(T>t) with T is the time of hash, and t the target.
+ 
+ We can see : 
+ - P(T>0) ==> 1
+ - P(T> +inf) ==> 0
+ The law is exponential law : lambda*e^(-lamba*t), with lamba = 1
+ 
+ 
+
+
+
 
