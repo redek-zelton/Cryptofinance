@@ -20,6 +20,7 @@
 - Difficulty 16 => 16^16 => 18 446 744 073 709 551 616
 - Difficulty 32 => 32^16 => 3,403e+38 (get collision)
 
+![f_expo](https://github.com/redek-zelton/Cryptofinance/blob/main/Proof%20of%20Work%20Mining/f_expo.JPG)
 * In Theory => So we can conclude the block mining for this function f(d) = 16^d, where d is the difficulty (number of zeros)
 * In Reality => it is f(d) = 16^(d-1)*(16/2) because in the last case, we have 50% chance
 
@@ -28,6 +29,7 @@
  Hash many time for a specific difficulty didn't give the same nonce or the same time of hash.
  It follows a continuous variable probability => P(T>t) with T is the time of hash, and t the target.
  
+ ![l_expo](https://github.com/redek-zelton/Cryptofinance/blob/main/Proof%20of%20Work%20Mining/l_expo.JPG)
  We can see : 
  - P(T>0) ==> 1
  - P(T> +inf) ==> 0
