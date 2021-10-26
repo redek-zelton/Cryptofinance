@@ -9,8 +9,8 @@ The idea of this attak is to hide our chain, when the network is 1 block behind 
 We give the probability table:
 
 
-* The mean of the reward is ER => SUM((p*q)^n) with n to +inf      =>      1 / (1 - p*q)
-* The mean of the number of block is EH => p+SUM((p*q)^n) with n to +inf    => p + 1 /(1- p*q)
+* The mean of the reward is ER => SUM(n*(p*q)^n) with n to +inf      =>      p*q / (1 - p*q)^2
+* The mean of the number of block is EH => 1*p+SUM(n*(p*q)^n) with n to +inf    => p + p*q /(1- p*q)^2
 * Rdt = ER/EH Then
 
 
