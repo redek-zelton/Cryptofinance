@@ -8,7 +8,6 @@ a technical infrastructure supposed to propose “a new space of freedom”
 according to its creators.
 - TotalSupply : 21M BTC
 - Consensus : POW (SHA-256)
-- Block Time : 10 min
 - Reward : at first 50 BTC and divided by 2 every 4years
 
 ### What is Difficulty?
@@ -19,7 +18,8 @@ difficulty. Valid blocks must have a hash below
 this target. Mining pools also have a 
 pool-specific share difficulty setting a lower 
 limit for shares.
-- Type Difficulty : number
+- Type Difficulty : random nonce
+- Block Time Hash : 10 min
 - Difficulty change: every 2016 Blocks
 
 ### TD
