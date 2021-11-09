@@ -9,12 +9,27 @@ The goal of the Attaker is to always remain at least one block ahead of the rest
 
 ## Probability
 ### See the impact of the length of the network chain
+We can see that the attacker should compete with the network without a long late. The attacker can reduce his need of power if he would compete against the network with small late.
+
 ![LenNet](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Double%20Spending/LenNet.JPG)
+```
+Valeur min de Rdt Z=2 A=3 =>  0.44
+Valeur min de Rdt Z=2 A=5 =>  0.46
+Valeur min de Rdt Z=2 A=10 =>  0.47000000000000003
+```
 
 
 
-### See the impact of the length of the network attaker
-![LenAtt](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Double%20Spending/LenAtt.JPG)
+### See the impact of the length of the attaker chain
+We can see that the attacker should compete with the network without a big ambicious. The attacker can reduce his need of power if he would compete against the network with small lead.
+
+
+![LenAtt](https://github.com/redekzelton/Cryptofinance/blob/main/Attack%20Double%20Spending/LenAtt.JPG)
+```
+Valeur min de Rdt Z=2 A=5 =>  0.46
+Valeur min de Rdt Z=5 A=5 =>  0.49
+with Z=10 and A=5 => +0.5
+```
 
 
 
