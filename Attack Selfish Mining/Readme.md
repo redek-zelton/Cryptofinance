@@ -20,5 +20,10 @@ We give the probability table:
 The miner should only need 33% power of the network to be profitable.
 
 ## Advantage
+After Having more than 33% power of the Network, The attaker can mine more block than his mining power. Having around 33% power of the network, at mean, 33% of blocks on the blockchain come from the attaker.
+
+Around 38% power of the Network, 50% of blocks on the blockchain come from him.
 
 ![adv](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Selfish%20Mining/adv.JPG)
+
+And Near to 50% power of the Network, All blocks come from Attaker !!!
