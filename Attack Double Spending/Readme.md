@@ -24,7 +24,7 @@ Valeur min de Rdt Z=2 A=10 =>  0.47000000000000003
 We can see that the attacker should compete with the network without a big ambicious. The attacker can reduce his need of power if he would compete against the network with small lead.
 
 
-![LenAtt](https://github.com/redekzelton/Cryptofinance/blob/main/Attack%20Double%20Spending/LenAtt.JPG)
+![LenAtt](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Double%20Spending/LenAtt.JPG)
 ```
 Valeur min de Rdt Z=2 A=5 =>  0.46
 Valeur min de Rdt Z=5 A=5 =>  0.49
