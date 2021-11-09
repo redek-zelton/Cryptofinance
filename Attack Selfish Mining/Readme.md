@@ -1,16 +1,21 @@
 # Attack Selfish Mining
-## Description
-By selfish mining, a miner (or group of miners) increases their revenue by strategically withholding and releasing blocks to the network.
-By not broadcasting their block right away, though, these miners effectively create their own private branch of the blockchain. The rest of the network continues to build on the previous block, while the selfish miner builds on top of this new chain. From that point, both chains will look completely different.
-The goal of the selfish miner is to always remain at least one block ahead of the rest of the network. Nodes accept the chain with the most accumulated proof of work as the valid blockchain. At any time, the selfish miner can reveal their chain. If it is longer than the one followed by the rest of the network, the existing blocks will be discarded, and transactions reversed. The miner collects all of the rewards from these blocks and causes other parties to waste resources.
 
-![intro](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Selfish%20Mining/intro.JPG)
+## Description
+It's possible that more than 1 miner mine a new block at the same time, then the network will be fork. So then, each chain will challenge each other. The longest chain will survive, and others will be destroyed.
+The idea of this attak is to hide our chain, when the network is 1 block behind us, so we broadcast our chain. Then our chain will be valid, but not the network.
+
+![intro](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Double%20Spending/Intro.JPG)
 
 ## Probability
-### See the impact of the length of the network chain
-![LenNet](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Selfish%20Mining/LenNet.JPG)
+We give the probability table:
 
+![Intro2](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Double%20Spending/Intro2.JPG)
 
+* The mean of the reward is ER => SUM(n*(p*q)^n) with n to +inf      =>      p*q / (1 - p*q)^2
+* The mean of the number of block is EH => 1*p+SUM(n*(p*q)^n) with n to +inf    => p + p*q /(1- p*q)^2
+* Rdt = ER/EH Then
 
-### See the impact of the length of the network attaker
-![LenAtt](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Selfish%20Mining/LenAtt.JPG)
+![Sim](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Double%20Spending/Sim.JPG)
+
+The miner should only need 33% power of the network to be profitable.
+
