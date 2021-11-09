@@ -17,4 +17,14 @@ Then
 
 ![proba](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%201%2B2/proba.JPG)
 
-The miner should only need 41,4% power of the network to be profitable. 
+The miner should only need 41.4% power of the network to be profitable. 
+
+## Advantage
+After Having more than 41.4% power of the Network, The attaker can mine more block than his mining power. Having 41.4% power of the network, at mean, 41.4% of blocks on the blockchain come from the attaker. 
+
+![Adv](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%201%2B2/Adv.JPG)
+
+And between 46% and 47% power of the Network, 50% of blocks on the blockchain come from him !
+
+## Conclusion
+You don't need 51% power of the Network tbe profitable, with the Attack 1+2, only 41.4% is sufficient
