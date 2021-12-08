@@ -23,7 +23,10 @@ limit for shares.
 - Difficulty change: every 2016 Blocks
 
 ### TD
-- Proof of Work Mining
-- Attack 1+2 Simulation
-- Attack Double Spending
-- Attack Selfish Mining
+- [Proof of Work Mining](https://github.com/redek-zelton/Cryptofinance/tree/main/Proof%20of%20Work%20Mining) => Show how proof of work it work 
+
+- [Attack 1+2 Simulation](https://github.com/redek-zelton/Cryptofinance/tree/main/Attack%201%2B2) => Efficient from : 0.4142
+
+- [Attack Double Spending](https://github.com/redek-zelton/Cryptofinance/tree/main/Attack%20Double%20Spending) => Efficient from: 0.44 (Depend on the length of the Network and the Attaker (best is attaker=2 and network=3))
+
+- [Attack Selfish Mining](https://github.com/redek-zelton/Cryptofinance/tree/main/Attack%20Selfish%20Mining) => Efficient from: 0.33
