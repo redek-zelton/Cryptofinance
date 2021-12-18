@@ -47,8 +47,8 @@ Valeur min de Rdt Z=2 A=10 =>  0.47000000000000003
   </tr>
  </table>
  
- In Summary of this table, Attaker should not be arrogant if he want to be profitable with the smallest power of the network. But he will earn less.
- 
+In Summary of this table, Attaker should not be very last if he want to be profitable with the smallest power of the network. But he will earn less. More the length of the network still increases more the number of mined blocks decreases, but the ratio of the network will increases.
+
 
 
 ### See the impact of the length of the attaker chain
@@ -93,7 +93,20 @@ with Z=10 and A=5 => +0.5
   </tr>
  </table>
  
+ In Summary of this table, Attaker should not be arrogant (try to have lot of advance) if he want to be profitable with the smallest power of the network. But he will earn less. More the length of the attacker still increases more the number of mined blocks increases, but the ratio of the network will stay around 100% for long time.
 
+### See the impact of the length
+
+#### a) minimum break-even point
+It's not very interresting for an attaker to compete the network with the same target. 
+* More the target increase, more the attaker will be profitable very late. So, the idea to have a target more important than the network will be more profitable.
+* More the target decrease, more the attaker will be profitable very soom. But, the profitabily is less interresting than the first idea (increase the target of the network).
+
+![LenAtt](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Double%20Spending/Lensame.JPG)
+
+## Conclusion
+This attack is efficient because, you don't need 51% of the network. You need at least 44% of the power of the network to be profitable.
+Howerver there is a gap of advantage between 44% and 48%.
 
 
 
