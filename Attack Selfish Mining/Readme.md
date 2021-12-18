@@ -40,7 +40,9 @@ Around 38% power of the Network, 50% of blocks on the blockchain come from him.
 And Near to 50% power of the Network, All blocks come from Attaker !!!
 
 The reward can show use that the number of blocks can create an attaker when he tries selfish mining. For example: An attacker having 48% power of the network, at mean, he cans create 21 blocks! it's huge.
+
 ![adv_w](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Selfish%20Mining/adv_w.JPG)
+
 
 ## Conclusion
 This attack is efficient because, you don't need 51% of the network. Only 33% is sufficient to be profitable
