@@ -10,6 +10,8 @@ They start with 0 blocks, and by a random process they can get blocks.
 
 This strategy should optimise as max possible for the attaker, like a deep learning process.
 
+![desc](https://github.com/redek-zelton/Cryptofinance/blob/main/Strategie%20de%20block/desc.JPG)
+
 Rules:
 * E(a,h,n,q,c): a(the number of blocks from Attaker), h(the number of blocks from Network), n(number of action), q(power of the attacker), c(cost of mining)
 * the number of action depend on n
