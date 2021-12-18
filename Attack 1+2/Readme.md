@@ -20,11 +20,23 @@ Then
 The miner should only need 41.4% power of the network to be profitable. 
 
 ## Advantage
-After Having more than 41.4% power of the Network, The attaker can mine more block than his mining power. Having 41.4% power of the network, at mean, 41.4% of blocks on the blockchain come from the attaker. 
+We can see after 10000 simulations, the number of created blocks for each probability. For Example: When the attacker has 20% of the network =>
+- In 10000 time of attack, 12000 blocks are created.
+- under 2000 blocks come from him
+- In theory, he should create 2400 blocks
 
-![Adv](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%201%2B2/Adv.JPG)
+So if, the attaker don't have the minimum break-even point of the power, he should be an honnest miner.
+
+![Adv_b](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%201%2B2/Adv_b.JPG)
+
+After Having more than 41.4% (minimum break-even point) power of the Network, The attaker can mine more block than his mining power. Having 41.4% power of the network, at mean, 41.4% of blocks on the blockchain come from the attaker. 
+
+![Adv_r](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%201%2B2/Adv_r.JPG)
 
 And between 46% and 47% power of the Network, 50% of blocks on the blockchain come from him !
+
+OverView on Reward per block
+![Adv_w](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%201%2B2/Adv_w.JPG)
 
 ## Conclusion
 You don't need 51% power of the Network tbe profitable, with the Attack 1+2, only 41.4% is sufficient
