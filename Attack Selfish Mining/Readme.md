@@ -6,7 +6,7 @@ The idea of this attak is to hide our chain, when the network is 1 block behind 
 
 ![intro](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Selfish%20Mining/Intro.JPG)
 
-## minimum break-even point of power of mining
+## Minimum break-even point of power of mining
 We give the probability table:
 
 ![Intro2](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Selfish%20Mining/Intro2.JPG)
@@ -19,7 +19,7 @@ We give the probability table:
 
 The miner should only need 33% power of the network to be profitable.
 
-## minimum break-even point of power of mining after paying charges
+## Minimum break-even point of power of mining after paying charges
 After Paying charges, with 33% power of Network, the Attaker can generate profits. In Theory, it is a bit less than 33%.
 
 ![Rwd](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Selfish%20Mining/Rwd.JPG)
