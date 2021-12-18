@@ -1,7 +1,9 @@
 # Proof of Work
 ## Concept
- POW is a process to show that your computer spend energy.
- More you have computing power, more your reward is high.
+Bitcoin as a permission-less blockchain uses
+proof-of-work. 
+PoW is a cryptographic puzzle that is difficult to solve but easy to verify. More you have computing power, more your reward is high.
+However, significant latency of proof-of-work for transactions confirmation has negative effects on blockchain security such that longer delays may increase the number of forks and the possibilities for mounting double-spending attacks.
 
 
 ## block
@@ -33,7 +35,7 @@
  We can see : 
  - P(T>0) ==> 1
  - P(T> +inf) ==> 0
- The law is exponential law : lambda*e^(-lamba*t), with lamba = 1
+ The law is exponential law : lambda*e^(-lamba*t), with t the time and lamba = 1 (over_target/total) 
  
  
 
