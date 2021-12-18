@@ -37,6 +37,8 @@ However, significant latency of proof-of-work for transactions confirmation has 
  - P(T> +inf) ==> 0
  The law is exponential law : lambda*e^(-lamba*t), with t the time and lamba = 1 (over_target/total) 
  
+## Applications
+In the part 3 (Applications), we can make some test, and try to find a time for a probability or vise-versa.
  
 
 
