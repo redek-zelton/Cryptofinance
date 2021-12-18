@@ -29,6 +29,7 @@ After Paying charges, with 33% power of Network, the Attaker can generate profit
 
 ## Advantage
 During the simulation, we can see a strong exponential increase of blocks in the blockchain! This strong increase comes from the power of the attacker, because only he cans publish blocks. if no, the height still increases by 1.
+
 ![adv_b](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Selfish%20Mining/adv_b.JPG)
 
 After Having more than 33% power of the Network, The attaker can mine more block than his mining power. Having around 33% power of the network, at mean, 33% of blocks on the blockchain come from the attaker.
