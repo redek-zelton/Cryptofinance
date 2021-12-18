@@ -30,3 +30,5 @@ limit for shares.
 - [Attack Double Spending](https://github.com/redek-zelton/Cryptofinance/tree/main/Attack%20Double%20Spending) => Efficient from: 0.44 (Depend on the length of the Network and the Attaker (best is attaker=2 and network=3))
 
 - [Attack Selfish Mining](https://github.com/redek-zelton/Cryptofinance/tree/main/Attack%20Selfish%20Mining) => Efficient from: 0.33
+
+- [Block Strategy](https://github.com/redek-zelton/Cryptofinance/tree/main/Strategie%20de%20block) => Efficient with 12 actions: 0.33 or less with n > 12
