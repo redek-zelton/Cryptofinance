@@ -9,6 +9,7 @@ The goal of the Attaker is to always remain at least one block ahead of the rest
 
 ## Probability
 ### See the impact of the length of the network chain
+#### a) minimum break-even point
 We can see that the attacker should compete with the network without a long late. The attacker can reduce his need of power if he would compete against the network with small late.
 
 ![LenNet](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Double%20Spending/LenNet.JPG)
@@ -18,9 +19,41 @@ Valeur min de Rdt Z=2 A=5 =>  0.46
 Valeur min de Rdt Z=2 A=10 =>  0.47000000000000003
 ```
 
+#### b) Advantages
+<table>
+  <tr>
+    <td>Target(Z target attacker / A target Network)</td>
+    <td>Z2_A3</td>
+     <td>Z2_A5</td>
+     <td>Z2_A10</td>
+  </tr>
+  <tr>
+    <td>Blocks possession</td>
+    <td valign="top"><img src="https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Double%20Spending/AvantageImage/adv_pZ2A3.JPG"></td>
+    <td valign="top"><img src="https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Double%20Spending/AvantageImage/adv_pZ2A5.JPG"></td>
+    <td valign="top"><img src="https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Double%20Spending/AvantageImage/adv_pZ2A10.JPG"></td>
+  </tr>
+  <tr>
+    <td>Blocks ratio</td>
+    <td valign="top"><img src="https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Double%20Spending/AvantageImage/adv_rZ2A3.JPG"></td>
+    <td valign="top"><img src="https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Double%20Spending/AvantageImage/adv_rZ2A5.JPG"></td>
+    <td valign="top"><img src="https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Double%20Spending/AvantageImage/adv_rZ2A10.JPG"></td>
+  </tr>
+  <tr>
+    <td>Reward per simulation</td>
+    <td valign="top"><img src="https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Double%20Spending/AvantageImage/adv_wZ2A3.JPG"></td>
+    <td valign="top"><img src="https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Double%20Spending/AvantageImage/adv_wZ2A5.JPG"></td>
+    <td valign="top"><img src="https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Double%20Spending/AvantageImage/adv_wZ2A10.JPG"></td>
+  </tr>
+ </table>
+ 
+ In Summary of this table, Attaker should not be arrogant if he want to be profitable with the smallest power of the network. But he will earn less.
+ 
 
 
 ### See the impact of the length of the attaker chain
+
+#### a) minimum break-even point
 We can see that the attacker should compete with the network without a big ambicious. The attacker can reduce his need of power if he would compete against the network with small lead.
 
 
@@ -32,6 +65,34 @@ with Z=10 and A=5 => +0.5
 ```
 
 
+#### b) Advantages
+<table>
+  <tr>
+    <td>Target(Z target attacker / A target Network)</td>
+    <td>Z2_A5</td>
+     <td>Z5_A5</td>
+     <td>Z10_A5</td>
+  </tr>
+  <tr>
+    <td>Blocks possession</td>
+    <td valign="top"><img src="https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Double%20Spending/AvantageImage/adv_pZ2A5.JPG"></td>
+    <td valign="top"><img src="https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Double%20Spending/AvantageImage/adv_pZ5A5.JPG"></td>
+    <td valign="top"><img src="https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Double%20Spending/AvantageImage/adv_pZ10A5.JPG"></td>
+  </tr>
+  <tr>
+    <td>Blocks ratio</td>
+    <td valign="top"><img src="https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Double%20Spending/AvantageImage/adv_rZ2A5.JPG"></td>
+    <td valign="top"><img src="https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Double%20Spending/AvantageImage/adv_rZ5A5.JPG"></td>
+    <td valign="top"><img src="https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Double%20Spending/AvantageImage/adv_rZ10A5.JPG"></td>
+  </tr>
+  <tr>
+    <td>Reward per simulation</td>
+    <td valign="top"><img src="https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Double%20Spending/AvantageImage/adv_wZ2A5.JPG"></td>
+    <td valign="top"><img src="https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Double%20Spending/AvantageImage/adv_wZ5A5.JPG"></td>
+    <td valign="top"><img src="https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Double%20Spending/AvantageImage/adv_wZ10A5.JPG"></td>
+  </tr>
+ </table>
+ 
 
 
 
