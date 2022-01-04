@@ -28,16 +28,18 @@ The probability of this process with number = 3 is the same as the attack 1+2. B
 
 We can see with number = 12 only 33% power of the network should be profitable! So only 12 actions, this method is more profitable than selfish 
 
-## Méthode d'Optimisation Avec Ajustement des blocks
+## Méthode d'Optimisation Avec Ajustement des blocks (prises en compte des blocks orphelins)
 
 ![sima12](https://github.com/redek-zelton/Cryptofinance/blob/main/Méthode%20de%20Minage%20Optimal/sima_12.JPG)
 
-The probability of this process with number = 3 is over 51%, because now the Attaker should pay all bills.
+With the number = 3, the attak cans not be profitable.
 
 ![sima](https://github.com/redek-zelton/Cryptofinance/blob/main/Méthode%20de%20Minage%20Optimal/sima.JPG)
 
-The probability of this process with number = 12 is 51%. So when the number of actions increases, the attacker should decreases he needs in power. 
+With the number = 12, the attak cans not be profitable.
+
+So for every number, attakers should be honnest! 
 
 ## Conclusion
-This Method shows the most optimised option for an Attaker. More the number of actions increases, more he need in power decreases! But this method is complexe, and shows all possibility in deep.
+This Method shows the most optimised option for an Attaker. More the number of actions increases, more he need in power decreases! But this method is complexe, and shows all possibility in deep. 
 there are 5^number_of_actions possible combinaisons !
