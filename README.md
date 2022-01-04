@@ -31,4 +31,4 @@ limit for shares.
 
 - [Attack Selfish Mining](https://github.com/redek-zelton/Cryptofinance/tree/main/Attack%20Selfish%20Mining) => Efficient from: 0.33
 
-- [Block Strategy](https://github.com/redek-zelton/Cryptofinance/tree/main/Strategie%20de%20block) => Efficient with 12 actions: 0.33 or less with n > 12
+- [Optimal Mining Strategy](https://github.com/redek-zelton/Cryptofinance/tree/main/Méthode%20de%20Minage%20Optimal) => Efficient with 12 actions: 0.33 or less with n > 12
