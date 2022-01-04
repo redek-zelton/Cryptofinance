@@ -54,5 +54,6 @@ This attack is efficient because, you don't need 51% of the network. Only 33% is
 
 
 
-[Référence](https://hal.archives-ouvertes.fr/hal-01794067/document)
+[Référence 1](https://hal.archives-ouvertes.fr/hal-01794067/document)
+[Référence 2](https://arxiv.org/pdf/1311.0243.pdf%7C)
 
