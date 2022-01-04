@@ -35,7 +35,10 @@ However, significant latency of proof-of-work for transactions confirmation has 
  We can see : 
  - P(T>0) ==> 1
  - P(T> +inf) ==> 0
- The law is exponential law : lambda*e^(-lamba*t), with t the time and lamba = 1 (over_target/total) 
+ 
+ ![lien](https://github.com/redek-zelton/Cryptofinance/blob/main/Proof%20of%20Work%20Mining/lien.JPG)
+ 
+ By using Kolmogorov-Smirnov(K-S) test, we can see the link between hash and exponential law.
  
 ## Applications
 In the part 3 (Applications), we can make some test, and try to find a time for a probability or vise-versa.
