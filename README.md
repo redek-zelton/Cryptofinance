@@ -23,7 +23,7 @@ limit for shares.
 - Difficulty change: every 2016 Blocks
 
 ### TD
-- [Proof of Work Mining](https://github.com/redek-zelton/Cryptofinance/tree/main/Proof%20of%20Work%20Mining) => Show how proof of work it work 
+- [Proof of Work Mining](https://github.com/redek-zelton/Cryptofinance/tree/main/Proof%20of%20Work%20Mining) => Show how proof of work it works 
 
 - [Attack 1+2 Simulation](https://github.com/redek-zelton/Cryptofinance/tree/main/Attack%201%2B2) => Efficient from : 0.4142
 
