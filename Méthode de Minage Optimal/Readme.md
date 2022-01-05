@@ -26,7 +26,7 @@ The probability of this process with number = 3 is the same as the attack 1+2. B
 
 ![sim](https://github.com/redek-zelton/Cryptofinance/blob/main/Méthode%20de%20Minage%20Optimal/sim.JPG)
 
-We can see with number = 12 only 33% power of the network should be profitable! So only 12 actions, this method is more profitable than selfish 
+We can see with number = 12 between 33% and 34% power of the network should be profitable! So only 12 actions, this method is more profitable than others except selfish mining
 
 ## Méthode d'Optimisation Avec Ajustement des blocks (prises en compte des blocks orphelins)
 
