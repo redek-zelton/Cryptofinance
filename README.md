@@ -32,3 +32,9 @@ limit for shares.
 - [Attack Selfish Mining](https://github.com/redek-zelton/Cryptofinance/tree/main/Attack%20Selfish%20Mining) => Efficient from: 0.33
 
 - [Optimal Mining Strategy](https://github.com/redek-zelton/Cryptofinance/tree/main/Méthode%20de%20Minage%20Optimal) => Efficient with 12 actions: between 0.33 and 0.34 or less with n > 12
+
+### Utilisation du code
+Tous les recherches sont codées en Python par l'utilisation d'un Jupyter Notebook.
+Il faut donc avoir Jupyter Notebook en passant par [Anaconda](https://www.anaconda.com/) ou sinon un IDE utilisant python or notebook.
+
+
