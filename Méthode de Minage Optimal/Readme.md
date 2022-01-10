@@ -17,7 +17,28 @@ Rules:
 * the number of action depend on n
 * if the number of blocks from attacker is more or same than the Network => Publishes in the blockchain and erases all block mining during the attack from the network or Continue to mine.
 * if the number of blocks from attacker is less than the Network => Abondones or Continue to mine.
+*
+* When n = 0 => end of the simulation
+* Abandon: (a,h) => (0,0) | reward = 0 and c = 0
+* Publish: (a,h) => (a-h-1,0) | reward = h+1 and c = q
+* Continue: (a,h) => (a+1,h) or (a,h+1) | reward = 0 and c = 0 or reward = 0 and c = q
 
+## Formula
+### Case without Ajusting Blocks
+* a > h+1
+E(a,h,n,q,c) = Max( h+1-c+E(a-h-1,0,n,q,c) , qE(a+1,h,n-1,q,c)+(1-q)(E(a,h+1,n-1,q,c)-c )
+* a = h+1
+E(a,h,n,q,c) = Max( h+1-c , qE(a+1,h,n-1,q,c)+(1-q)(E(a,h+1,n-1,q,c)-c )
+* a < h
+E(a,h,n,q,c) = Max( 0 , qE(a+1,h,n-1,q,c)+(1-q)(E(a,h+1,n-1,q,c)-c )
+
+### Case with Ajusting Blocks
+* a > h+1
+E(a,h,n,q,c) = Max( h+1-c(h+1)+E(a-h-1,0,n,q,c) , qE(a+1,h,n-1,q,c)+(1-q)(E(a,h+1,n-1,q,c)-c )
+* a = h+1
+E(a,h,n,q,c) = Max( h+1-c(h+1) , qE(a+1,h,n-1,q,c)+(1-q)(E(a,h+1,n-1,q,c)-c )
+* a < h
+E(a,h,n,q,c) = Max( 0 , qE(a+1,h,n-1,q,c)+(1-q)(E(a,h+1,n-1,q,c)-c )
 
 ## Méthode d'Optimisation Sans Ajustement des blocks
 ![sim12](https://github.com/redek-zelton/Cryptofinance/blob/main/Méthode%20de%20Minage%20Optimal/sim_12.JPG)
