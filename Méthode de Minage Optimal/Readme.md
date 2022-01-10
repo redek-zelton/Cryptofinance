@@ -61,6 +61,24 @@ With the number = 12, the attak cans not be profitable.
 
 So for every number, attakers should be honnest! 
 
+## Limits
+### Méthode d'Optimisation Sans Ajustement des blocks
+When n tend to +inf => We have something like : q*[(1-q)+SUM(Y^n)]+(1-q)(SUM(Y^n)-c) with q the power, c the costs, and Y le probability of the pattern (continue and publish).
+
+Y = [q(1-q)+(1-q)(0+c)] = [2q-2q^2]
+
+SUM(Y^n) = SUM([2q-2q^2]^n) => 1/(1-Y)
+
+Then the mininum for q is q*[(1-q)+(1/(1-Y))]+(1-q)((1/(1-Y))-q)<=q   <=>  
+
+q = 0.368 (there is something wrong about my hypothesis Y)
+
+In reality, q ~ 0.3298 ! 
+
+
+### Méthode d'Optimisation Avec Ajustement des blocks (prises en compte des blocks orphelins)
+For all n (actions), the value will stay at 0 !
+
 ## Conclusion
 This Method shows the most optimised option for an Attaker. More the number of actions increases, more he need in power decreases! But this method is complexe, and shows all possibility in deep. 
 there are 5^number_of_actions possible combinaisons !
