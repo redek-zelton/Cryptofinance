@@ -1,4 +1,5 @@
 # Attack Selfish Mining
+* [Notebook](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Selfish%20Mining/Attack_Selfish_Mining.ipynb)
 
 ## Description
 It's possible that more than 1 miner mine a new block at the same time, then the network will be fork. So then, each chain will challenge each other. The longest chain will survive, and others will be destroyed.
