@@ -14,9 +14,9 @@ We can see that the attacker should compete with the network without a long late
 
 ![LenNet](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Double%20Spending/LenNet.JPG)
 ```
-Valeur min de Rdt Z=2 A=3 =>  0.44
-Valeur min de Rdt Z=2 A=5 =>  0.46
-Valeur min de Rdt Z=2 A=10 =>  0.47000000000000003
+Valeur min de Rdt Z=2 A=3 =>  0.41
+Valeur min de Rdt Z=2 A=5 =>  0.44
+Valeur min de Rdt Z=2 A=10 =>  0.46
 ```
 
 #### b) Advantages
@@ -59,7 +59,7 @@ We can see that the attacker should compete with the network without a big ambic
 
 ![LenAtt](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Double%20Spending/LenAtt.JPG)
 ```
-Valeur min de Rdt Z=2 A=5 =>  0.46
+Valeur min de Rdt Z=2 A=5 =>  0.44
 Valeur min de Rdt Z=5 A=5 =>  0.49
 with Z=10 and A=5 => +0.5
 ```
@@ -105,7 +105,7 @@ It's not very interresting for an attaker to compete the network with the same t
 ![LenAtt](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Double%20Spending/Lensame.JPG)
 
 ## Conclusion
-This attack is efficient because, you don't need 51% of the network. You need at least 44% of the power of the network to be profitable.
+This attack is efficient because, you don't need 51% of the network. You need at least 42% of the power of the network to be profitable.
 Howerver there is a gap of advantage between 44% and 48%.
 
 
