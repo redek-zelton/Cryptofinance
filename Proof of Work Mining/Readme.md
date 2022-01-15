@@ -1,4 +1,6 @@
 # Proof of Work
+* [Notebook](https://github.com/redek-zelton/Cryptofinance/blob/main/Proof%20of%20Work%20Mining/Proof_of_Work_Mining.ipynb)
+
 ## Concept
 Bitcoin as a permission-less blockchain uses
 proof-of-work. 
