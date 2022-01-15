@@ -1,4 +1,5 @@
 # Attak 1+2
+* [Notebook](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%201%2B2/Attack_1_%2B_2.ipynb)
 
 ## Description
 The Attaker chooses to attack during 3 blocks. If the first block is mined by the network, the attaker would stop immediatly. But if the first block is mined by him, he would challenge the network for 2 blocks.
