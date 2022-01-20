@@ -23,10 +23,6 @@ We give the probability table:
 
 The miner should only need 33% power of the network to be profitable.
 
-## Minimum break-even point of power of mining after paying charges
-After Paying charges, with 33% power of Network, the Attaker can generate profits. In Theory, it is a bit less than 33%.
-
-![Sim_p](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Selfish%20Mining/sim_p.JPG)
 
 ## Advantage
 During the simulation, we can see a strong exponential increase of blocks in the blockchain! This strong increase comes from the power of the attacker, because only he cans publish blocks. if no, the height still increases by 1.
