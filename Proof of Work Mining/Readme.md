@@ -17,11 +17,11 @@ However, significant latency of proof-of-work for transactions confirmation has 
  Each hash is 256 bits => 32 Bytes in Hex (0 => F)
  So to have an Hash with 0.............., we need to hash 16 times in mean.
  then the nonce follow this :
-- Difficulty 0 => 16^0 => 1
-- Difficulty 1 => 16^1 => 16
-- Difficulty 2 => 16^2 => 256
+- Difficulty 0 => 16^0 => 1 (all between 0 and F)
+- Difficulty 1 => 16^1 => 16 (0 between 0 and F)
+- Difficulty 2 => 16^2 => 256 (00 between 0 and F)
 - Difficulty 3 => 16^3 => 4096 ...
-- Difficulty 16 => 16^16 => 18 446 744 073 709 551 616
+- Difficulty 16 => 16^16 => 18 446 744 073 709 551 616 (0000000000000000 between 0 and F)
 - Difficulty 32 => 32^16 => 3,403e+38 (get collision)
 
 ![f_expo](https://github.com/redek-zelton/Cryptofinance/blob/main/Proof%20of%20Work%20Mining/f_expo.JPG)
