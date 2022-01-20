@@ -6,25 +6,24 @@ Deux versions:
 ## Description
 Two teams of miner: Attaker and the Network.
 
-They start with 0 blocks, and by a random process they can get blocks.
+They start with 0 block, and by a random process they can get blocks.
 
 This strategy should optimise as max possible for the attaker, like a deep learning process.
 
 ![desc](https://github.com/redek-zelton/Cryptofinance/blob/main/Méthode%20de%20Minage%20Optimal/desc.JPG)
 
 Rules:
-* E(a,h,n,q,c): a(the number of blocks from Attaker), h(the number of blocks from Network), n(number of action), q(power of the attacker), c(cost of mining)
-* the number of action depend on n
+* E(a,h,n,q,c): a(the number of blocks from Attaker), h(the number of blocks from Network), n(number of action to create a new block), q(power of the attacker), c(cost of mining)
+* there are n possible blocks to create
 * if the number of blocks from attacker is more or same than the Network => Publishes in the blockchain and erases all block mining during the attack from the network or Continue to mine.
 * if the number of blocks from attacker is less than the Network => Abondones or Continue to mine.
-*
-* When n = 0 => end of the simulation
+
 * Abandon: (a,h) => (0,0) | reward = 0 and c = 0
 * Publish: (a,h) => (a-h-1,0) | reward = h+1 and c = q
 * Continue: (a,h) => (a+1,h) or (a,h+1) | reward = 0 and c = 0 or reward = 0 and c = q
 
 ## Formula
-### Case without Ajusting Blocks
+### Case when the simulation finishes with a=0 or abandon
 * a > h+1
 E(a,h,n,q,c) = Max( h+1-c+E(a-h-1,0,n,q,c) , qE(a+1,h,n-1,q,c)+(1-q)(E(a,h+1,n-1,q,c)-c )
 * a = h+1
@@ -32,7 +31,10 @@ E(a,h,n,q,c) = Max( h+1-c , qE(a+1,h,n-1,q,c)+(1-q)(E(a,h+1,n-1,q,c)-c )
 * a < h
 E(a,h,n,q,c) = Max( 0 , qE(a+1,h,n-1,q,c)+(1-q)(E(a,h+1,n-1,q,c)-c )
 
-### Case with Ajusting Blocks
+### Case when the simulation finishes with n=0
+
+
+### Case with attacker, who pays for orphan blocks
 * a > h+1
 E(a,h,n,q,c) = Max( h+1-c(h+1)+E(a-h-1,0,n,q,c) , qE(a+1,h,n-1,q,c)+(1-q)(E(a,h+1,n-1,q,c)-c )
 * a = h+1
@@ -40,7 +42,7 @@ E(a,h,n,q,c) = Max( h+1-c(h+1) , qE(a+1,h,n-1,q,c)+(1-q)(E(a,h+1,n-1,q,c)-c )
 * a < h
 E(a,h,n,q,c) = Max( 0 , qE(a+1,h,n-1,q,c)+(1-q)(E(a,h+1,n-1,q,c)-c )
 
-## Méthode d'Optimisation Sans Ajustement des blocks
+## Case when the simulation finishes with a=0 or abandon
 ![sim12](https://github.com/redek-zelton/Cryptofinance/blob/main/Méthode%20de%20Minage%20Optimal/sim_12.JPG)
 
 The probability of this process with number = 3 is the same as the attack 1+2. Because 1+2 is a particular case of this strategy.
@@ -49,7 +51,7 @@ The probability of this process with number = 3 is the same as the attack 1+2. B
 
 We can see with number = 12 between 33% and 34% power of the network should be profitable! So only 12 actions, this method is more profitable than others except selfish mining
 
-## Méthode d'Optimisation Avec Ajustement des blocks (prises en compte des blocks orphelins)
+## Case with attacker, who pays for orphan blocks
 
 ![sima12](https://github.com/redek-zelton/Cryptofinance/blob/main/Méthode%20de%20Minage%20Optimal/sima_12.JPG)
 
@@ -59,25 +61,7 @@ With the number = 3, the attak cans not be profitable.
 
 With the number = 12, the attak cans not be profitable.
 
-So for every number, attakers should be honnest! 
-
-## Limits
-### Méthode d'Optimisation Sans Ajustement des blocks
-When n tend to +inf => We have something like : q*[(1-q)+SUM(Y^n)]+(1-q)(SUM(Y^n)-c) with q the power, c the costs, and Y le probability of the pattern (continue and publish).
-
-Y = [q(1-q)+(1-q)(0+c)] = [2q-2q^2]
-
-SUM(Y^n) = SUM([2q-2q^2]^n) => 1/(1-Y)
-
-Then the mininum for q is q*[(1-q)+(1/(1-Y))]+(1-q)((1/(1-Y))-q)<=q   <=>  
-
-q = 0.368 (there is something wrong about my hypothesis Y)
-
-In reality, q ~ 0.3298 ! 
-
-
-### Méthode d'Optimisation Avec Ajustement des blocks (prises en compte des blocks orphelins)
-For all n (actions), the value will stay at 0 !
+To Conclude, for all n, the value will stay at 0 !
 
 ## Conclusion
 This Method shows the most optimised option for an Attaker. More the number of actions increases, more he need in power decreases! But this method is complexe, and shows all possibility in deep. 
