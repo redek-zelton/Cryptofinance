@@ -12,7 +12,6 @@ They start with 0 block, and by a random process they can get blocks.
 
 This strategy should optimise as max possible for the attaker, like a deep learning process.
 
-![desc](https://github.com/redek-zelton/Cryptofinance/blob/main/Méthode%20de%20Minage%20Optimal/desc.JPG)
 
 Rules:
 * E(a,h,n,q,c): a(the number of blocks from Attaker), h(the number of blocks from Network), n(number of action to create a new block), q(power of the attacker), c(cost of mining)
@@ -23,6 +22,8 @@ Rules:
 * Abandon: (a,h) => (0,0) | reward = 0 and c = 0
 * Publish: (a,h) => (a-h-1,0) | reward = h+1 and c = q
 * Continue: (a,h) => (a+1,h) or (a,h+1) | reward = 0 and c = 0 or reward = 0 and c = q
+
+The strategy will end when a = 0, n = 0, or abandon.
 
 
 
