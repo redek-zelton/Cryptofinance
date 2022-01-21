@@ -15,8 +15,8 @@ We give the probability table:
 
 ![Intro2](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Selfish%20Mining/Intro2.JPG)
 
-* The mean of the reward is ER => SUM(n*(p*q)^n) with n to +inf      =>      p*q / (1 - p*q)^2
-* The mean of the number of block is EH => 1*p+SUM(n*(p*q)^n) with n to +inf    => p + p*q /(1- p*q)^2
+* The mean of the reward is ER
+* The mean of the number of block is EH
 * Rdt = ER/EH Then
 
 ![Sim](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Selfish%20Mining/Sim.JPG)
@@ -31,13 +31,13 @@ During the simulation, we can see a strong exponential increase of blocks in the
 
 After Having more than 33% power of the Network, The attaker can mine more block than his mining power. Having around 33% power of the network, at mean, 33% of blocks on the blockchain come from the attaker.
 
-Around 38% power of the Network, 50% of blocks on the blockchain come from him.
+Around 40% power of the Network, 50% of blocks on the blockchain come from him.
 
 ![adv_r](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Selfish%20Mining/adv_r.JPG)
 
 And Near to 50% power of the Network, All blocks come from Attaker !!!
 
-The reward can show use that the number of blocks can create an attaker when he tries selfish mining. For example: An attacker having 48% power of the network, at mean, he cans create 21 blocks! it's huge.
+The reward can show use that the number of blocks can create an attaker when he tries selfish mining. For example: An attacker having 48% power of the network, at mean, he cans create 6 blocks! it's huge.
 
 ![adv_w](https://github.com/redek-zelton/Cryptofinance/blob/main/Attack%20Selfish%20Mining/adv_w.JPG)
 
