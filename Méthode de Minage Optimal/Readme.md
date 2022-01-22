@@ -14,7 +14,7 @@ This strategy should optimise as max possible for the attaker, like a deep learn
 
 
 Rules:
-* E(a,h,n,q,c): a(the number of blocks from Attaker), h(the number of blocks from Network), n(number of action to create a new block), q(power of the attacker), c(cost of mining)
+* E(a,h,n,q,c): E(maximum gain expectation), a(the number of blocks from Attaker), h(the number of blocks from Network), n(number of action to create a new block), q(power of the attacker), c(cost of mining)
 * there are n possible blocks to create
 * if the number of blocks from attacker is more or same than the Network => Publishes in the blockchain and erases all block mining during the attack from the network or Continue to mine.
 * if the number of blocks from attacker is less than the Network => Abondones or Continue to mine.
@@ -25,6 +25,7 @@ Rules:
 
 The strategy will end when a = 0, n = 0, or abandon.
 
+/!\ for the case when n = 0, n is the number of action(Abandon,Publish,Continue) !
 
 
 ## Formula
@@ -38,9 +39,9 @@ E(a,h,n,q,c) = Max( 0 , qE(a+1,h,n-1,q,c)+(1-q)(E(a,h+1,n-1,q,c)-c )
 
 ### Case when the simulation finishes with n=0
 * a => h+1
-E(a,h,n,q,c) = Max( h+1-c+E(a-h-1,0,n,q,c) , qE(a+1,h,n-1,q,c)+(1-q)(E(a,h+1,n-1,q,c)-c )
+E(a,h,n,q,c) = Max( h+1-c+E(a-h-1,0,n-1,q,c) , qE(a+1,h,n-1,q,c)+(1-q)(E(a,h+1,n-1,q,c)-c )
 * a < h
-E(a,h,n,q,c) = Max( E(0,0,n,q,c) , qE(a+1,h,n-1,q,c)+(1-q)(E(a,h+1,n-1,q,c)-c )
+E(a,h,n,q,c) = Max( E(0,0,n-1,q,c) , qE(a+1,h,n-1,q,c)+(1-q)(E(a,h+1,n-1,q,c)-c )
 
 ### Case with attacker, who pays for orphan blocks
 * a > h+1
