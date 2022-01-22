@@ -65,8 +65,11 @@ We can see with number = 12 between 33% and 34% power of the network should be p
 
 
 ## Case when the simulation finishes with n=0
+* code
 
+![n0](https://github.com/redek-zelton/Cryptofinance/blob/main/Méthode%20de%20Minage%20Optimal/n0.JPG)
 
+* the complexity is 2^number_of_action, it is too huge for Google Colab or Jupyter Notebook to compile it. Only code is available here, can try to compile with other language.
 
 ## Case with attacker, who pays for orphan blocks
 
